@@ -31,12 +31,7 @@
         {
             User user = new User(email,password);
             AddUser(user);
-        }
-
-        
-
-
-        
+        }   
     }
 
 }
