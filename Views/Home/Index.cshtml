@@ -2,7 +2,35 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@*
+NON HO BEN CAPITO COME FAR FUNZIONARE INSIEME C# E HTML, EVIDENTEMENTE NON FUNZIONA COME CON JAVASCRIPT
+*@
+
+<html>
+<head>
+    <title> LogIn</title>
+</head>
+
+<body>
+    <h1>Welcome to the LogInPage</h1>
+
+    <h3>
+      
+
+
+        
+        @using (Html.BeginForm("MetodoProva()", "HomeController", FormMethod.Get))
+        {
+            <p>Email</p>
+            <input id='email' type="text" placeholder="email">
+            <p>Password</p>
+            <input id='password' type="text" placeholder="password">
+            <button id="LogInButton"> LogIn </button>
+        }
+       
+
+        
+
+    </h3>
+</body>
+</html>
